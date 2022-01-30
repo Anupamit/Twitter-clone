@@ -1,5 +1,5 @@
 import SearchIcon from '@mui/icons-material/Search';import React from 'react';
-import { TwitterTweetEmbed } from 'react-twitter-embed';
+import { TwitterTweetEmbed, TwitterTimelineEmbed, TwitterShareButton } from 'react-twitter-embed';
 import "./Widgets.css"
 
 function Widgets() {
@@ -13,6 +13,17 @@ function Widgets() {
             <h2>What's happening</h2>
 
             <TwitterTweetEmbed tweetId={"858551177860055040"} />
+            
+            <TwitterTimelineEmbed 
+            sourceType="profile"
+            screenName="narendramodi"
+            options={{ height: 400 }}
+            />
+            
+            <TwitterShareButton
+            url={"https://github.com/Anupamit"}
+            options={{ text: "#reactjs is awesome", via: "indiankumar01"}}
+            />
             </div>
         </div>
     );
