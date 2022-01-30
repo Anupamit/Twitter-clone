@@ -11,11 +11,13 @@ function Feed() {
                 <div className='feed__header'>
                     <h2>Home</h2>
                 </div>
-
             {/* Tweet*/}
             <TweetBox/>
             {/* Post*/}
-            <Post/>      
+            <Post/>    
+            <Post/>    
+            <Post/>    
+            <Post/>    
         </div>
     );
 }
